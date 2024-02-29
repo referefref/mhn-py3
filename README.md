@@ -1,7 +1,6 @@
-# Project Status
+# Purpose
 
-This project is undergoing a partial rewrite for Python 3 targeting Ubuntu 20.04 as the primary platform.
-The last stable commit would be `be58cbf8c726c29c4c0f993023688fdbd026ee05` for Ubuntu 18.04, although you may still encounter dependency issues. Please continue to report any bugs found. Pull requests are encouraged!
+The original project has been forked with the idea of migrating this be compatible with python3 and supported operating systems.
 
 -------------------------
 
