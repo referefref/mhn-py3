@@ -49,9 +49,9 @@ if [ -f /etc/redhat-release ]; then
     WWW_OWNER="nginx"
     ./install_sqlite.sh
 
-    if [ ! -f /usr/local/bin/python2.7 ]; then
-        echo "[`date`] Installing Python2.7 as a pre-req"
-       ./install_python2.7.sh
+    if [ ! -f /usr/local/bin/python3 ]; then
+        echo "[`date`] Installing Python3 as a pre-req"
+       ./install_python3.sh
     fi
 
      ./install_supervisord.sh
@@ -59,8 +59,8 @@ fi
 
 if [ -f /etc/debian_version ]; then
     apt-get update && apt-get upgrade -y
-    apt-get install -y python-pip
-    pip install --upgrade pip
+    apt-get install -y python3-pip
+    pip3 install --upgrade pip
     apt-get install apt-transport-https -y
     apt-get install build-essential -y #needed for building some python modules
 fi
